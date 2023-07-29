@@ -52,12 +52,15 @@ watchEffect((onCleanup) => {
     // Call drawMap initially
     drawMap();
 
-    // Redraw the map when the window is resized
-    const resizeListener = window.addEventListener("resize", drawMap);
 
-    // Cleanup function
-    onCleanup(() => {
-        window.removeEventListener("resize", resizeListener);
-    })
+    if (process.client) {
+        // Redraw the map when the window is resized
+        const resizeListener = window.addEventListener("resize", drawMap);
+
+        // Cleanup function
+        onCleanup(() => {
+            window.removeEventListener("resize", resizeListener);
+        })
+    }
 });
 </script>
