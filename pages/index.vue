@@ -6,7 +6,7 @@
                 <h1 class="text-3xl md:text-6xl font-semibold">We provide you the <span class="text-green-700">best medical
                         care</span> wherever you
                     are</h1>
-                <h3 class="text-xl">Affordable and effective health care from licensed providers, in-person.</h3>
+                <h3 class="text-lg">Affordable and effective health care from licensed providers, in-person.</h3>
                 <button
                     class="btn rounded-3xl bg-green-700 text-white md:w-64 hover:last:translate-x-1 hover:bg-green-600">Find
                     nearest kiosk
@@ -23,19 +23,15 @@
                 </button>
             </div>
             <div class="flex-1">
-                <ClientOnly>
                 <GhanaMap></GhanaMap>
-                </ClientOnly>
             </div>
         </section>
         <section class="md:px-24 p-8 py-16 bg-blue-100 space-y-8">
-            <div class="flex-col justify-center flex-1 md:text-xl space-y-4 text-center">
-                <h1 class="text-3xl md:text-5xl font-semibold">We provide modern <span class="text-green-700">service
-                        care</span>
-                </h1>
+            <div class="flex-col justify-center flex-1 md:text-lg space-y-4 text-center">
+                <h1 class="text-3xl md:text-4xl font-semibold">Modern service care</h1>
                 <h3>Our innovative health kiosks make modern health care easily accessible, even it remote
                     areas.</h3>
-                <p>It offers
+                <p class="md:px-[4vw]">It offers
                     fully
                     compliant clinical examination and treatment rooms including general, OB-Gyn, X-ray, pediatric, ear
                     nose
