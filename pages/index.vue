@@ -24,35 +24,64 @@
             </div>
             <div class="flex-1">
                 <ClientOnly>
-                    <GhanaMap></GhanaMap>
+                <GhanaMap></GhanaMap>
                 </ClientOnly>
             </div>
         </section>
-        <section class="md:px-24 p-8 py-16 bg-blue-100">
-            <div class="flex flex-col md:flex-row gap-8">
-                <div class="flex-col justify-center flex-1 md:text-xl space-y-2">
-                    <h3 class="text-4xl font-semibold">We provide modern <span class="text-green-700">service care</span>
-                    </h3>
-                    <h5>Our innovative health kiosks make modern health care easily accessible, even it remote
-                        areas.</h5>
-                    <p>It offers
-                        fully
-                        compliant clinical examination and treatment rooms including general, OB-Gyn, X-ray, pediatric, ear
-                        nose
-                        and
-                        throat, ophthalmic, dental and dialysis, as well as designs for mass casualty, central sterile
-                        processing,
-                        administration and a fully functioning operating suit with positive air and sterile corridor.</p>
+        <section class="md:px-24 p-8 py-16 bg-blue-100 space-y-8">
+            <div class="flex-col justify-center flex-1 md:text-xl space-y-4 text-center">
+                <h1 class="text-3xl md:text-5xl font-semibold">We provide modern <span class="text-green-700">service
+                        care</span>
+                </h1>
+                <h3>Our innovative health kiosks make modern health care easily accessible, even it remote
+                    areas.</h3>
+                <p>It offers
+                    fully
+                    compliant clinical examination and treatment rooms including general, OB-Gyn, X-ray, pediatric, ear
+                    nose
+                    and
+                    throat, ophthalmic, dental and dialysis, as well as designs for mass casualty, central sterile
+                    processing,
+                    administration and a fully functioning operating suit with positive air and sterile corridor.</p>
+            </div>
+            <div class="flex flex-wrap justify-center gap-8 pt-8">
+                <div class="card w-96 bg-base-100 shadow-xl">
+                    <figure><img class="aspect-[4/3]" src="/images/1.jpg" alt="Trailer 1" /></figure>
+                    <div class="card-body">
+                        <h2 class="card-title">
+                            Easy to deploy
+                        </h2>
+                        <p> Under 10,000 lbs. they are easy to move
+                            with
+                            pickup truck</p>
+                    </div>
                 </div>
-                <div class="grid grid-cols-1 lg:grid-cols-2 flex-1 gap-2">
-                    <div style="background-image: url(images/1.jpg)" alt=""
-                        class="bg-cover min-h-64 rounded-md hover:scale-105"></div>
-                    <div style="background-image: url(images/2.jpg)" alt=""
-                        class="bg-cover h-64 rounded-md hover:scale-105"></div>
-                    <div style="background-image: url(images/3.jpg)" alt=""
-                        class="bg-cover h-64 rounded-md hover:scale-105"></div>
-                    <div style="background-image: url(images/4.jpg)" alt=""
-                        class="bg-cover h-64 rounded-md hover:scale-105"></div>
+                <div class="card w-96 bg-base-100 shadow-xl">
+                    <figure><img class="aspect-[4/3]" src="/images/2.jpg" alt="Trailer 1" /></figure>
+                    <div class="card-body">
+                        <h2 class="card-title">
+                            Generate power
+                        </h2>
+                        <p> Redundant power removes the need to grid connection</p>
+                    </div>
+                </div>
+                <div class="card w-96 bg-base-100 shadow-xl">
+                    <figure><img class="aspect-[4/3]" src="/images/3.jpg" alt="Trailer 1" /></figure>
+                    <div class="card-body">
+                        <h2 class="card-title">
+                            Manufacture water
+                        </h2>
+                        <p> Storage, filtration and water from air technologies available</p>
+                    </div>
+                </div>
+                <div class="card w-96 bg-base-100 shadow-xl">
+                    <figure><img class="aspect-[4/3]" src="/images/4.jpg" alt="Trailer 1" /></figure>
+                    <div class="card-body">
+                        <h2 class="card-title">
+                            Connected
+                        </h2>
+                        <p> Cellular and Satellite connectivity options ensure communications</p>
+                    </div>
                 </div>
             </div>
         </section>
