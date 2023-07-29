@@ -1,6 +1,5 @@
 <template>
     <div>
-        <NavBar></NavBar>
         <section class="w-full p-8 pt-24 md:p-16 flex flex-col-reverse md:flex-row h-[calc(100vh-16px)]">
             <div class="flex-1 flex flex-col text-center md:text-start md:px-16 justify-center space-y-4">
                 <h1 class="text-3xl md:text-6xl font-semibold">We provide you the <span class="text-green-700">best medical
@@ -108,7 +107,7 @@
                 <img src="/images/westend_logo.png" alt="" class="h-24">
             </div>
         </section>
-        <!-- Footer -->
+
         <footer class="footer footer-center p-10 bg-base-200 text-base-content rounded">
             <div class="grid grid-flow-col gap-4">
                 <NuxtLink to="/about" active-class="font-bold" class="hover:font-bold">About us</NuxtLink>
@@ -145,3 +144,8 @@
 </template>
 
 <style scoped></style>
+<script setup>
+definePageMeta({
+    layout: 'default',
+})
+</script>
