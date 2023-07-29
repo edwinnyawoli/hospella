@@ -144,8 +144,4 @@
     </div>
 </template>
 
-<style scoped>
-section {
-    min-height: calc(100vh - 16px);
-}
-</style>
+<style scoped></style>
