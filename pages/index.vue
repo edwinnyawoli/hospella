@@ -25,7 +25,7 @@
                 <GhanaMap></GhanaMap>
             </div>
         </section>
-        <section class="md:px-24 p-8 py-16 bg-green-100 space-y-8">
+        <section class="md:px-24 p-8 py-16 bg-blue-50 space-y-8">
             <div class="flex-col justify-center flex-1 md:text-lg space-y-4 text-center">
                 <h1 class="text-3xl md:text-4xl font-semibold">Modern service care</h1>
                 <h3>Our innovative health kiosks make modern health care easily accessible, even it remote
@@ -53,7 +53,7 @@
         </section>
 
         <!-- Facilities -->
-        <section class="md:px-24 p-8 py-16 bg-blue-100 hidden">
+        <section class="md:px-24 p-8 py-16 bg-blue-50 hidden">
             <div class="flex-col justify-center flex-1 md:text-lg space-y-16 text-center">
                 <h1 class="text-3xl md:text-4xl font-semibold">Available Facilities</h1>
                 <div v-for="f in facilities" class="flex flex-col md:flex-row justify-around facility gap-8">
@@ -70,7 +70,7 @@
         </section>
 
         <!-- Core values -->
-        <section class="md:px-24 p-8 py-16 bg-green-100">
+        <section class="md:px-24 p-8 py-16 bg-blue-50">
             <div class="flex-col justify-center flex-1 md:text-lg space-y-16 text-center">
                 <h1 class="text-3xl md:text-4xl font-semibold">Our Core Values</h1>
                 <div class="flex flex-wrap justify-center gap-8">
