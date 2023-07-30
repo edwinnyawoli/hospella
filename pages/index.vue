@@ -52,6 +52,30 @@
             </div>
         </section>
 
+        <!-- Mission and Vission -->
+        <section class="md:px-24 p-8 py-16 space-y-8">
+            <div class="flex-col justify-center flex-1 md:text-xl space-y-4 text-center">
+                <h1 class="text-3xl md:text-4xl font-semibold">Who we are</h1>
+            </div>
+            <div class="flex flex-col md:flex-row gap-6">
+                <div class="flex-1"><iframe class="md:w-[40vw] md:h-[50vh]" src="https://www.youtube.com/embed/r_r_5ngID2Y"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        allowfullscreen></iframe></div>
+                <div class="flex flex-col flex-1 gap-4 md:gap-8">
+                    <div>
+                        <h3 class="text-2xl font-semibold">Mission</h3>
+                        <p>To be the most accessible and cost effective electronic health care provider</p>
+                    </div>
+                    <div>
+                        <h3 class="text-2xl font-semibold">Vision</h3>
+                        <p>We aim to bridge the gap between patients and health care providers and to be the most trusted
+                            electronic health care provider by 2028 in Africa and beyond</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
         <!-- Facilities -->
         <section class="md:px-24 p-8 py-16 bg-blue-50 hidden">
             <div class="flex-col justify-center flex-1 md:text-lg space-y-16 text-center">
