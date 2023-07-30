@@ -140,22 +140,22 @@ const services = ref([
     {
         "title": "Easy to deploy",
         "description": "Under 10,000 lbs. they are easy to move with pickup truck",
-        "image": "/images/1.jpg"
+        "image": "./images/1.jpg"
     },
     {
         "title": "Generate power",
         "description": "Redundant power removes the need to grid connection",
-        "image": "/images/2.jpg"
+        "image": "./images/2.jpg"
     },
     {
         "title": "Manufacture water",
         "description": "Storage, filtration and water from air technologies available",
-        "image": "/images/3.jpg"
+        "image": "./images/3.jpg"
     },
     {
         "title": "Connected",
         "description": " Cellular and Satellite connectivity options ensure communications",
-        "image": "/images/4.jpg"
+        "image": "./images/4.jpg"
     },
 ]);
 
