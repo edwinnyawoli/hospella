@@ -95,6 +95,19 @@
                 </div>
             </div>
         </section>
+
+        <!-- Core values -->
+        <section class="md:px-24 p-8 py-16 bg-green-100">
+            <div class="flex-col justify-center flex-1 md:text-lg space-y-16 text-center">
+                <h1 class="text-3xl md:text-4xl font-semibold">Our Core Values</h1>
+                <div class="flex flex-wrap justify-center gap-8">
+                    <div v-for="v in coreValues" class="flex flex-col justify-center w-64 h-64 bg-white rounded-full gap-4">
+                        <img :src="v.image" alt="" class="w-[50%] h-[50%] mx-auto">
+                        <h4>{{ v.title }}</h4>
+                    </div>
+                </div>
+            </div>
+        </section>
     </div>
 </template>
 
@@ -157,6 +170,14 @@ const services = ref([
         "description": " Cellular and Satellite connectivity options ensure communications",
         "image": "./images/4.jpg"
     },
+]);
+
+const coreValues = ref([
+    { "title": "Compassionate", "description": "", "image": "./images/heart.png" },
+    { "title": "Accountability", "description": "", "image": "./images/display.png" },
+    { "title": "Quality Care", "description": "", "image": "./images/healthcare.png" },
+    { "title": "Accessibility", "description": "", "image": "./images/distributed.png" },
+    { "title": "Integrity", "description": "", "image": "./images/honesty.png" },
 ]);
 
 const facilities = ref([
