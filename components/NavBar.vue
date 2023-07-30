@@ -36,7 +36,7 @@
               </g>
             </g>
           </g>
-        </svg>Hospella</NuxtLink>
+        </svg>E-hospital +</NuxtLink>
     </div>
     <div class="navbar-center hidden lg:flex">
       <ul class="menu menu-horizontal px-1">

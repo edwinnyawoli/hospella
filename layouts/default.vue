@@ -33,7 +33,7 @@
                 </div>
             </div>
             <div>
-                <p>Copyright © 2023 - All right reserved by Hospella</p>
+                <p>Copyright © 2023 - All right reserved by E-hospital +</p>
             </div>
         </footer>
     </div>

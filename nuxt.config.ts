@@ -3,7 +3,7 @@ export default defineNuxtConfig({
   app: {
     baseURL: '/hospella/',
     head: {
-      title: "Hospella",
+      title: "E-hospital +",
       htmlAttrs: {
         'data-theme': 'lofi'
       },
