@@ -30,7 +30,7 @@
                 <h1 class="text-3xl md:text-4xl font-semibold">Modern service care</h1>
                 <h3>Our innovative health kiosks make modern health care easily accessible, even it remote
                     areas.</h3>
-                <p class="md:px-[4vw]">It offers
+                <p class="md:px-[4vw] hidden">It offers
                     fully
                     compliant clinical examination and treatment rooms including general, OB-Gyn, X-ray, pediatric, ear
                     nose
@@ -108,44 +108,78 @@
             </div>
         </section>
 
-        <footer class="footer footer-center p-10 bg-base-200 text-base-content rounded">
-            <div class="grid grid-flow-col gap-4">
-                <NuxtLink to="/about" active-class="font-bold" class="hover:font-bold">About us</NuxtLink>
-                <NuxtLink to="/contact" active-class="font-bold" class="hover:font-bold">Contact</NuxtLink>
-                <!-- <NuxtLink to="/press" active-class="font-bold" class="hover:font-bold">Press kit</NuxtLink> -->
-            </div>
-            <div>
-                <div class="grid grid-flow-col gap-4">
-                    <a href="https://www.twitter.com/" class="hover:scale-105"><svg xmlns="http://www.w3.org/2000/svg"
-                            width="24" height="24" viewBox="0 0 24 24" class="fill-current">
-                            <path
-                                d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z">
-                            </path>
-                        </svg></a>
-                    <a href="https://www.youtube.com/" class="hover:scale-105"><svg xmlns="http://www.w3.org/2000/svg"
-                            width="24" height="24" viewBox="0 0 24 24" class="fill-current">
-                            <path
-                                d="M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816-.029-6.185-.484-8.549-4.385-8.816zm-10.615 12.816v-8l8 3.993-8 4.007z">
-                            </path>
-                        </svg></a>
-                    <a href="https://www.facebook.com/" class="hover:scale-105"><svg xmlns="http://www.w3.org/2000/svg"
-                            width="24" height="24" viewBox="0 0 24 24" class="fill-current">
-                            <path
-                                d="M9 8h-3v4h3v12h5v-12h3.642l.358-4h-4v-1.667c0-.955.192-1.333 1.115-1.333h2.885v-5h-3.808c-3.596 0-5.192 1.583-5.192 4.615v3.385z">
-                            </path>
-                        </svg></a>
+        <!-- Facilities -->
+        <section class="md:px-24 p-8 py-16 bg-blue-100 hidden">
+            <div class="flex-col justify-center flex-1 md:text-lg space-y-16 text-center">
+                <h1 class="text-3xl md:text-4xl font-semibold">Available Facilities</h1>
+                <div v-for="f in facilities" class="flex flex-col md:flex-row justify-around facility gap-8">
+                    <!-- Images -->
+                    <div class="images flex flex-row flex-1 relative">
+                        <img v-for="i in f.images" class="w-[30vw] rounded" :src="i" alt="Trailer 1" />
+                    </div>
+                    <div class="flex flex-col flex-1 justify-center">
+                        <h3 class="font-semibold">{{ f.title }}</h3>
+                        <p>{{ f.description }}</p>
+                    </div>
                 </div>
             </div>
-            <div>
-                <p>Copyright © 2023 - All right reserved by Hospella</p>
-            </div>
-        </footer>
+        </section>
     </div>
 </template>
 
-<style scoped></style>
+<style scoped>
+div.facility:nth-child(even) {
+    flex-direction: row-reverse;
+    text-align: end !important;
+}
+
+div.facility:nth-child(odd) {
+    text-align: start !important;
+}
+
+div.facility:nth-child(odd)>div.images {
+    justify-content: end;
+}
+
+/* div.images>img {
+    position: absolute;
+}
+
+div.images>img:nth-child(1) {
+    top: 0;
+    left: 0;
+}
+
+div.images>img:nth-child(2) {
+    top: -2vh;
+    left: 2vw;
+}
+
+div.images>img:nth-child(3) {
+    top: -4vh;
+    left: 4vw;
+} */
+</style>
 <script setup>
 definePageMeta({
     layout: 'default',
 })
+
+const facilities = ref([
+    {
+        "title": "OB-GYN with Pediatric Exam",
+        "description": "This clinic has the instruments, sterilizers and imaging to support most OB-Gyn and pediatric care visits. Everything from well visits for pregnancy to pediatric visits with vaccinations, even emergency C-sections are supported",
+        "images": [
+            '/images/3.jpg'
+        ]
+    }, {
+        "title": "General Exam With X-Ray & Telemedicine",
+        "description": "The telemedical capabilities in our general exam unit are reimbursed by Medicare. This creates a perfect revenue generator for the widest array of CODE 16 exams and treatments that are fully reimbursable.",
+        "images": ['/images/3.jpg']
+    }, {
+        "title": "DENTAL OFFICE WITH 2 DENTAL SURGERY CHAIRS",
+        "description": "Dental services in a medically compliant mobile platform with sterile cleaning equipment make four handed dental surgery easy. Options include our solid base dental chairs or our more mobile deployable dental units in a pelican case.",
+        "images": ['/images/3.jpg']
+    }
+]);
 </script>
