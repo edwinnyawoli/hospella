@@ -102,7 +102,7 @@
                 <h1 class="text-3xl md:text-4xl font-semibold">Our Core Values</h1>
                 <div class="flex flex-wrap justify-center gap-8">
                     <div v-for="v in coreValues" class="flex flex-col justify-center w-64 h-64 bg-white rounded-full gap-4">
-                        <img :src="v.image" alt="" class="w-[50%] h-[50%] mx-auto">
+                        <img :src="v.image" alt="" class="w-[35%] h-[35%] mx-auto">
                         <h4>{{ v.title }}</h4>
                     </div>
                 </div>
