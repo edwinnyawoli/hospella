@@ -40,42 +40,13 @@
                     administration and a fully functioning operating suit with positive air and sterile corridor.</p>
             </div>
             <div class="flex flex-wrap justify-center gap-8 pt-8">
-                <div class="card w-96 bg-base-100 shadow-xl">
-                    <figure><img class="aspect-[4/3]" src="/images/1.jpg" alt="Trailer 1" /></figure>
+                <div v-for="s in services" class="card w-96 bg-base-100 shadow-xl">
+                    <figure><img class="aspect-[4/3]" :src="s.image" alt="Trailer 1" /></figure>
                     <div class="card-body">
                         <h2 class="card-title">
-                            Easy to deploy
+                            {{ s.title }}
                         </h2>
-                        <p> Under 10,000 lbs. they are easy to move
-                            with
-                            pickup truck</p>
-                    </div>
-                </div>
-                <div class="card w-96 bg-base-100 shadow-xl">
-                    <figure><img class="aspect-[4/3]" src="/images/2.jpg" alt="Trailer 1" /></figure>
-                    <div class="card-body">
-                        <h2 class="card-title">
-                            Generate power
-                        </h2>
-                        <p> Redundant power removes the need to grid connection</p>
-                    </div>
-                </div>
-                <div class="card w-96 bg-base-100 shadow-xl">
-                    <figure><img class="aspect-[4/3]" src="/images/3.jpg" alt="Trailer 1" /></figure>
-                    <div class="card-body">
-                        <h2 class="card-title">
-                            Manufacture water
-                        </h2>
-                        <p> Storage, filtration and water from air technologies available</p>
-                    </div>
-                </div>
-                <div class="card w-96 bg-base-100 shadow-xl">
-                    <figure><img class="aspect-[4/3]" src="/images/4.jpg" alt="Trailer 1" /></figure>
-                    <div class="card-body">
-                        <h2 class="card-title">
-                            Connected
-                        </h2>
-                        <p> Cellular and Satellite connectivity options ensure communications</p>
+                        <p> {{ s.description }}</p>
                     </div>
                 </div>
             </div>
@@ -164,6 +135,29 @@ div.images>img:nth-child(3) {
 definePageMeta({
     layout: 'default',
 })
+
+const services = ref([
+    {
+        "title": "Easy to deploy",
+        "description": "Under 10,000 lbs. they are easy to move with pickup truck",
+        "image": "/images/1.jpg"
+    },
+    {
+        "title": "Generate power",
+        "description": "Redundant power removes the need to grid connection",
+        "image": "/images/2.jpg"
+    },
+    {
+        "title": "Manufacture water",
+        "description": "Storage, filtration and water from air technologies available",
+        "image": "/images/3.jpg"
+    },
+    {
+        "title": "Connected",
+        "description": " Cellular and Satellite connectivity options ensure communications",
+        "image": "/images/4.jpg"
+    },
+]);
 
 const facilities = ref([
     {
