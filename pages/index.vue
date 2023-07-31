@@ -25,12 +25,15 @@
                 <GhanaMap></GhanaMap>
             </div>
         </section>
-        
+
 
         <!-- Mission and Vission -->
         <section class="md:px-24 p-8 py-16 bg-blue-50 space-y-8">
             <div class="flex-col justify-center flex-1 md:text-xl space-y-4 text-center">
                 <h1 class="text-3xl md:text-4xl font-semibold">Who we are</h1>
+                <p class="md:px-24">We are an Electronic Hospital where patients can reach various doctors everyday,
+                    anywhere and at anytime.
+                    Download our app or contact us via the support chat button to have a doctor take care of you.</p>
             </div>
             <div class="flex flex-col md:flex-row gap-6">
                 <div class="flex-1"><iframe class="md:w-[40vw] md:h-[50vh]" src="https://www.youtube.com/embed/r_r_5ngID2Y"
