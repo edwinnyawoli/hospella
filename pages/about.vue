@@ -1,18 +1,11 @@
 <template>
     <div>
         <section class="md:px-24 p-8 py-24 bg-blue-50 space-y-8">
-            <div class="flex-col justify-center flex-1 md:text-lg space-y-4 text-center">
-                <h1 class="text-3xl md:text-4xl font-semibold">About us</h1>
-                <h3>Our innovative health kiosks make modern health care easily accessible, even it remote
-                    areas.</h3>
-                <p class="md:px-[4vw] hidden">It offers
-                    fully
-                    compliant clinical examination and treatment rooms including general, OB-Gyn, X-ray, pediatric, ear
-                    nose
-                    and
-                    throat, ophthalmic, dental and dialysis, as well as designs for mass casualty, central sterile
-                    processing,
-                    administration and a fully functioning operating suit with positive air and sterile corridor.</p>
+            <div class="flex-col justify-center flex-1 md:text-lg text-center">
+                <h1 class="text-3xl md:text-4xl font-semibold mb-4">About us</h1>
+                <p class="md:px-24">We are a hospital just a click away and right at your fingertips. Our innovative health kiosks make
+                    modern health care easily accessible, even it remote
+                    areas.We provide you with the best medical care wherever you are. Affordable and effective healthcare from licensed providers</p>
             </div>
             <div class="flex flex-wrap justify-center gap-8 pt-8">
                 <div v-for="s in services" class="card w-96 bg-base-100 shadow-xl">
