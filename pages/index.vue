@@ -5,7 +5,7 @@
                 <h1 class="text-3xl md:text-6xl font-semibold">We provide you the <span class="text-green-700">best medical
                         care</span> wherever you
                     are</h1>
-                <h3 class="text-lg">Affordable and effective health care from licensed providers, in-person.</h3>
+                <h3 class="text-lg">Affordable and effective health care from licensed providers, at your fingertips.</h3>
                 <button
                     class="btn rounded-3xl bg-green-700 text-white md:w-64 hover:last:translate-x-1 hover:bg-green-600">Find
                     nearest kiosk
@@ -25,35 +25,10 @@
                 <GhanaMap></GhanaMap>
             </div>
         </section>
-        <section class="md:px-24 p-8 py-16 bg-blue-50 space-y-8">
-            <div class="flex-col justify-center flex-1 md:text-lg space-y-4 text-center">
-                <h1 class="text-3xl md:text-4xl font-semibold">Modern service care</h1>
-                <h3>Our innovative health kiosks make modern health care easily accessible, even it remote
-                    areas.</h3>
-                <p class="md:px-[4vw] hidden">It offers
-                    fully
-                    compliant clinical examination and treatment rooms including general, OB-Gyn, X-ray, pediatric, ear
-                    nose
-                    and
-                    throat, ophthalmic, dental and dialysis, as well as designs for mass casualty, central sterile
-                    processing,
-                    administration and a fully functioning operating suit with positive air and sterile corridor.</p>
-            </div>
-            <div class="flex flex-wrap justify-center gap-8 pt-8">
-                <div v-for="s in services" class="card w-96 bg-base-100 shadow-xl">
-                    <figure><img class="aspect-[4/3]" :src="s.image" alt="Trailer 1" /></figure>
-                    <div class="card-body">
-                        <h2 class="card-title">
-                            {{ s.title }}
-                        </h2>
-                        <p> {{ s.description }}</p>
-                    </div>
-                </div>
-            </div>
-        </section>
+        
 
         <!-- Mission and Vission -->
-        <section class="md:px-24 p-8 py-16 space-y-8">
+        <section class="md:px-24 p-8 py-16 bg-blue-50 space-y-8">
             <div class="flex-col justify-center flex-1 md:text-xl space-y-4 text-center">
                 <h1 class="text-3xl md:text-4xl font-semibold">Who we are</h1>
             </div>
@@ -96,7 +71,7 @@
         <!-- Core values -->
         <section class="md:px-24 p-8 py-16 bg-blue-50">
             <div class="flex-col justify-center flex-1 md:text-lg space-y-16 text-center">
-                <h1 class="text-3xl md:text-4xl font-semibold">Our Core Values</h1>
+                <h1 class="text-3xl md:text-4xl font-semibold">Our core values</h1>
                 <div class="flex flex-wrap justify-center gap-8">
                     <div v-for="v in coreValues" class="flex flex-col justify-center w-64 h-64 bg-white rounded-full gap-4">
                         <img :src="v.image" alt="" class="w-[35%] h-[35%] mx-auto">
@@ -109,7 +84,7 @@
         <!-- Partnerships -->
         <section class="md:px-24 p-8 py-16 space-y-8">
             <div class="flex-col justify-center flex-1 md:text-xl space-y-4 text-center">
-                <h1 class="text-3xl md:text-4xl font-semibold">In Partnership With</h1>
+                <h1 class="text-3xl md:text-4xl font-semibold">In partnership with</h1>
                 <h3></h3>
             </div>
             <div class="flex flex-wrap justify-center gap-8">
@@ -172,28 +147,7 @@ definePageMeta({
     layout: 'default',
 })
 
-const services = ref([
-    {
-        "title": "Easy to deploy",
-        "description": "Under 10,000 lbs. they are easy to move with pickup truck",
-        "image": "./images/1.jpg"
-    },
-    {
-        "title": "Generate power",
-        "description": "Redundant power removes the need to grid connection",
-        "image": "./images/2.jpg"
-    },
-    {
-        "title": "Manufacture water",
-        "description": "Storage, filtration and water from air technologies available",
-        "image": "./images/3.jpg"
-    },
-    {
-        "title": "Connected",
-        "description": " Cellular and Satellite connectivity options ensure communications",
-        "image": "./images/4.jpg"
-    },
-]);
+
 
 const coreValues = ref([
     { "title": "Compassionate", "description": "", "image": "./images/heart.png" },
