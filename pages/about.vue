@@ -3,7 +3,8 @@
         <section class="md:px-24 p-8 py-24 bg-blue-50 space-y-8">
             <div class="flex-col justify-center flex-1 md:text-lg text-center">
                 <h1 class="text-3xl md:text-4xl font-semibold mb-4">About us</h1>
-                <p class="md:px-24">We are a hospital just a click away and right at your fingertips. Our innovative health kiosks make
+                <p class="md:px-24">We are a hospital just a click away and right at your fingertips.</p>
+                <p>Our innovative health kiosks make
                     modern health care easily accessible, even it remote
                     areas.We provide you with the best medical care wherever you are. Affordable and effective healthcare from licensed providers</p>
             </div>
