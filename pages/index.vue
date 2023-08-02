@@ -32,7 +32,7 @@
             <div class="flex-col justify-center flex-1 md:text-xl space-y-2 text-center">
                 <h1 class="text-3xl md:text-4xl font-semibold mb-4">Who we are</h1>
                 <p class="md:px-24">We are an electronic hospital just a click away and right at your finger tips.</p>
-                <p class="md:px-24">Our innovative health kioks make modern healthcare easily accessible, even in remote
+                <p class="md:px-24">Our innovative health kiosks make modern healthcare easily accessible, even in remote
                     areas. We provide you with the best medical care wherever you are.</p>
             </div>
             <div class="flex flex-col md:flex-row gap-6">
